@@ -1,0 +1,6 @@
+Sources:
+http://elixir-lang.org/docs/v1.0/iex/IEx.html
+http://elixir-lang.org/
+http://elixir-lang.org/getting-started/introduction.html
+http://elixir-lang.org/crash-course.html#erlang
+http://blog.nitrous.io/2014/06/03/intro-to-elixir.html
