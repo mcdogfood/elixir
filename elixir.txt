@@ -1,6 +1,41 @@
+>### 
 Sources:
 http://elixir-lang.org/docs/v1.0/iex/IEx.html
 http://elixir-lang.org/
 http://elixir-lang.org/getting-started/introduction.html
 http://elixir-lang.org/crash-course.html#erlang
 http://blog.nitrous.io/2014/06/03/intro-to-elixir.html
+
+Am also covering Erlang here.
+>### Erlang:
+Command line shell: erl
+>>### Shell commands
+q(). # quits
+ls().
+pwd().
+cd("..").
+^C brings up a menu
+^G user switch command
+h(). # history
+history(N). # How much history to keep around.
+results(N). # Same as above
+e(N).       # Execute command at N position in history
+v(N).       # References command at N
+b().        # Show declared variables
+f().        # Clear all variables
+f(M).       # Clear M
+
+>>### Variables
+Variables are not mutable!
+All variables have to begin with a capital letter or an underscore!
+
+>>### Maths
+-*/+ div(gives integer result) rem(remainder) (parentheses work the same)
+round(200/15)
+math:sin(0).
+math:cos(0).
+math:pow(2,16).
+2#1011101. # put base number before number
+16#cafe.   # same as above
+
+>>### Functions
