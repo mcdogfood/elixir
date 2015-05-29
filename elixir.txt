@@ -62,3 +62,4 @@ Most things are compiled into modules, otherwise, they get lost when you close t
 Example drop.erl in this folder is a simple example
 
 >>### Compiling
+c(filname).  % note that there is no .erl extension here although the source file will have one
