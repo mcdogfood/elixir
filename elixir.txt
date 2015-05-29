@@ -63,3 +63,7 @@ Example drop.erl in this folder is a simple example
 
 >>### Compiling
 c(filname).  % note that there is no .erl extension here although the source file will have one
+
+-import directive allows you to import things from other modules that are compiled
+-compile(export_all).  % Allws you to tear down the module - looks dodgy to me!
+
