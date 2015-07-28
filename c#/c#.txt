@@ -1,0 +1,50 @@
+need to document access modifiers
+Method declarations
+
+Declaring methods:
+So, all applications must have a Main() method. We all knew that!
+As with Java, methods can be internal or external. All the ones in the .NET 
+framework will be public. Methods declared using signature :
+accessModifier returnorvoid methodName (type1 param1, type2 param2) {
+  code
+}
+
+Access modifiers:
+private - only internal
+public - anywhere
+protected - internal and derived
+internal - from files within same assembly
+static - class method
+
+Return type or void
+
+calling a method:
+methodName(var1, var2);
+
+Returning data
+You can return a single value, or an array or collection (using ref or out keyword):
+ReturnMultiOut(out first, out sValue);
+Console.WriteLine("{0}, {1}", first.ToString(), sValue);
+
+static void ReturnMultiOut(out int i, out string s) {
+  i = 25;
+  s = "using out";
+}
+
+// Using ref requires that the variables be initialized first
+sValue = "";
+ReturnMultiRef(ref first, ref sValue);
+Console.WriteLine("{0}, {1}", first.ToString(), sValue);
+
+static void ReturnMultiRef(ref int i, ref string s) {
+  i = 50;
+  s = "using ref";
+}
+
+There's code for this in github
+
+-- Overloading methods
+This is the practice of using the same method name for different purposes, by amending the signature
+methodName () {}
+methodName (string ReturnSomething) {}
+

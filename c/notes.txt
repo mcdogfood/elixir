@@ -1,0 +1,6 @@
+This is where I'm studying the C Pointers book
+int num; //Integer
+int *pi; //Pointer to an integer
+
+White space use is irrelevant
+

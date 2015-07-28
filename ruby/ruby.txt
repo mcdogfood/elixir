@@ -1,0 +1,34 @@
+classes
+class Rectangle
+end
+
+Methods are implemented in the usual way using def, i.e.
+
+class Rectangle
+  def perimeter
+    2 * (@length + @breadth) # prefixed by @ are instance variables
+  end
+end
+
+return keyword is used in subroutines, but, like Perl, the last computed result
+is automatically returned
+
+Methods that return nothing return the NilClass
+
+up to 6.2
+Can define default values for variables within a subroutine using =, e.g.
+def (value=1, othervalue)
+end
+
+splat operator (*) is used to handle methods that have a variable number of parameters
+e.g.
+def functionVarPar(*paramList)
+
+the .inject method iterates over them. Not quite sure how yet!
+def add(*numbers)
+  numbers.inject(0) { |sum, number| sum + number }
+end
+Meet Sidu Ponnappa Chonira, who's 28 and Male
+Meet Sidu Ponnappa Chonira, who's 28 and Male
+
+

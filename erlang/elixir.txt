@@ -1,0 +1,69 @@
+>### Elixir
+Sources:
+http://elixir-lang.org/docs/v1.0/iex/IEx.html
+http://elixir-lang.org/
+http://elixir-lang.org/getting-started/introduction.html
+http://elixir-lang.org/crash-course.html#erlang
+http://blog.nitrous.io/2014/06/03/intro-to-elixir.html
+
+Am also covering Erlang here.
+>### Erlang:
+>>### Idiosyncrasies
+All of it!
+Commands end with a full stop
+Variables are immutable
+Variables can only begin with a Capital Letter or an underscore
+Comment characters is %
+It's a compiled language
+'arity'  is a phrase they use to describe a concept that is similar to 'signature' in OOP - name and params
+
+Command line shell: erl
+>>### Shell commands
+q(). # quits
+ls().
+pwd().
+cd("..").
+^C brings up a menu
+^G user switch command
+h(). # history
+history(N). # How much history to keep around.
+results(N). # Same as above
+e(N).       # Execute command at N position in history
+v(N).       # References command at N
+b().        # Show declared variables
+f().        # Clear all variables
+f(M).       # Clear M
+
+>>### Variables
+Variables are not mutable!
+All variables have to begin with a capital letter or an underscore!
+
+>>### Maths
+-*/+ div(gives integer result) rem(remainder) (parentheses work the same)
+round(200/15)
+math:sin(0).
+math:cos(0).
+math:pow(2,16).
+2#1011101. # put base number before number
+16#cafe.   # same as above
+
+>>### Functions
+% Define a function, bind it to a variable for use on the command line
+FallVelocity = fun(Distance) -> math:sqrt(2 * 9.8 * Distance) end.
+Mps_to_mph = fun(Mps) -> 2.23693629 * Mps end.
+Mps_to_kph = fun(Mps) -> 3.6 * Mps end.
+
+% Can nest the functions:
+Mps_to_kph(FallVelocity(2000)).
+
+
+>>### Modules
+Most things are compiled into modules, otherwise, they get lost when you close the shell
+Example drop.erl in this folder is a simple example
+
+>>### Compiling
+c(filname).  % note that there is no .erl extension here although the source file will have one
+
+-import directive allows you to import things from other modules that are compiled
+-compile(export_all).  % Allws you to tear down the module - looks dodgy to me!
+

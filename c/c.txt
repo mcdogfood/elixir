@@ -1,0 +1,14 @@
+C is statically typed, imperative and pretty unforgiving, which I like, personally.
+When using gcc, the file is automatically renamed as a.out
+gcc -o hello hello.c names it hello instead, for example
+gcc -Wall gives warnings
+gcc -Wall -o produces an object file
+gcc -c combines them, I think
+
+include directive similar to require in Perl, but only contains the promise of code.
+
+Comments are with /* and */.
+
+c doesn't have a print function, so you have to use printf with %d, etc.
+function parameters are automatically lexically scoped
+
