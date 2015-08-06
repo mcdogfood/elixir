@@ -31,7 +31,7 @@ results(N). # Same as above
 e(N).       # Execute command at N position in history
 v(N).       # References command at N
 b().        # Show declared variables
-f().        # Clear all variables
+f().        # Clear all variables %% f can be read as 'forget'
 f(M).       # Clear M
 
 >>### Variables
@@ -67,3 +67,39 @@ c(filname).  % note that there is no .erl extension here although the source fil
 -import directive allows you to import things from other modules that are compiled
 -compile(export_all).  % Allws you to tear down the module - looks dodgy to me!
 
+>>### Atoms
+Atoms are bits of text, strings it would seem, true and false are atoms.
+Boolean operators are :
+and
+andalso
+or
+orelse
+xor
+not
+
+==	Equal to
+/=	Not equal to
+=:=	Exactly equal to
+=/=	Exactly not equal to
+=<	Less than or equal to
+<	Less than
+>=	Greater than or equal to
+>	Greater than
+
+>>### Tuples
+Tuples are used to store collections of data - they can be of different types. We use curly brackets to define them.
+{foo, bar, 123}.
+{employee, 'Roberto', 'Alloy'}.
+You can use the element function to retrieve elements, and setelement to retrieve them.
+element(3, {1,2,3,4,5}).
+setelement{2, {1,2,3,4,5}, 'banana'}).
+
+>>### Lists
+Seem extremely similar to me, except that they have square brackets....
+[january, february, march]
+[123, pigeon, [a,b,c]]
+
+... and you can automatically break them down into bits, so:
+[Head|Tail]=[a,b,c,d,e].
+% Head contains a
+% Tail contains the rest
